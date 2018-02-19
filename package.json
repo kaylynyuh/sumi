@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/elishaterada/sumi/issues"
   },
-  "homepage": "https://github.com/elishaterada/sumi#readme",
+  "homepage": "https://elishaterada.github.io//sumi/",
   "dependencies": {
     "@storybook/addon-actions": "^3.3.13",
     "@storybook/addon-info": "^3.3.13",
