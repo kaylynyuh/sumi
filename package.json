@@ -1,0 +1,25 @@
+{
+  "name": "sumi",
+  "version": "0.1.0",
+  "description": "React Storybook inspired by Japanese sumi art style",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elishaterada/sumi.git"
+  },
+  "keywords": [
+    "React",
+    "Storybook",
+    "Japanese",
+    "Sumi"
+  ],
+  "author": "Elisha Terada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elishaterada/sumi/issues"
+  },
+  "homepage": "https://github.com/elishaterada/sumi#readme"
+}
