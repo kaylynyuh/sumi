@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015",
+    "stage-2"
+  ],
+  "plugins": ["transform-react-jsx"],
+  "only": [
+    "**/*.js",
+    "./src/index.js"
+  ],
+  "ignore": [
+    "node_modules"
+  ]
+}
