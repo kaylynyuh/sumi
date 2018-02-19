@@ -4,7 +4,9 @@
   "description": "React Storybook inspired by Japanese sumi art style",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/elishaterada/sumi/issues"
   },
-  "homepage": "https://github.com/elishaterada/sumi#readme"
+  "homepage": "https://github.com/elishaterada/sumi#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.3.13",
+    "@storybook/addon-actions": "^3.3.13",
+    "@storybook/addon-links": "^3.3.13",
+    "@storybook/addons": "^3.3.13",
+    "babel-core": "^6.26.0"
+  }
 }
