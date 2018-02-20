@@ -2,6 +2,7 @@ const colors = {
   black: '#000000',
   mineShaft: '#333333',
   doveGray: '#666666',
+  dustyGray: '#999999',
   mercury: '#e6e6e6',
   concrete: '#f2f2f2',
   white: '#ffffff',
