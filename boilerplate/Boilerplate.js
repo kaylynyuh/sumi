@@ -1,31 +1,12 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { css, cx } from 'emotion';
+import { css } from 'emotion';
 
-const Boilerplate = ({
-  className,
-  ...other
-}) => {
-  const componentClass = css`
-    color: red;
-  `;
+import colors from '../styles/colors';
+import typography, { pxToRem } from '../styles/typography';
 
-  return (
-    <div
-      className={cx(componentClass, className)}
-      {...other}
-    >
-      Hello Boilerplate
-    </div>
-  );
-};
+const BoilerplateClass = css`
+  font-size: ${pxToRem(16)};
+  font-weight: ${typography.fontWeightRegular};
+  color: ${colors.primaryColor};
+`;
 
-Boilerplate.propTypes = {
-  className: PropTypes.string,
-};
-
-Boilerplate.defaultProps = {
-  className: null,
-};
-
-export default Boilerplate;
+export default BoilerplateClass;

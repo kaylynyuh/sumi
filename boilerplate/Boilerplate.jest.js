@@ -3,13 +3,13 @@ import renderer from 'react-test-renderer';
 import { createSerializer } from 'jest-emotion';
 import * as emotion from 'emotion';
 
-import Boilerplate from '../src/components/Boilerplate';
+import BoilerplateClass from '../src/components/Boilerplate';
 
 expect.addSnapshotSerializer(createSerializer(emotion));
 
 test('renders Boilerplate', () => {
   const reactComponent = renderer
-    .create(<Boilerplate>Test</Boilerplate>)
+    .create(<div className={BoilerplateClass}>Test</div>)
     .toJSON();
 
   expect(reactComponent).toMatchSnapshot();

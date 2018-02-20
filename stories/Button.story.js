@@ -2,16 +2,33 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import Button from '../src/components/Button';
+import ButtonClass from '../src/components/Button';
 
-storiesOf('Button', module)
+const previewStyle = {
+  margin: '0 1rem 1rem 0',
+};
+
+storiesOf('Styles', module)
   .add(
     'Button',
     withInfo({
-      text: 'Button description',
+      text: 'A basic button style intended to be used with your custom layout style.',
     })(() => (
       <div>
-        <Button>Test</Button>
+        <button
+          className={ButtonClass}
+          onMouseDown={e => e.preventDefault()}
+          style={previewStyle}
+        >
+          Action
+        </button>
+        <button
+          className={ButtonClass}
+          onMouseDown={e => e.preventDefault()}
+          style={previewStyle}
+        >
+          More
+        </button>
       </div>
     )),
   );

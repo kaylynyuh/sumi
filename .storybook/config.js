@@ -8,9 +8,9 @@ setOptions({
   url: 'https://github.com/elishaterada/sumi',
   goFullScreen: false,
   showStoriesPanel: true,
-  showAddonPanel: true,
+  showAddonPanel: false,
   showSearchBox: false,
-  addonPanelInRight: true,
+  addonPanelInRight: false,
   sortStoriesByKind: true,
   hierarchySeparator: null,
   sidebarAnimations: true,
@@ -20,7 +20,7 @@ setOptions({
 setDefaults({
   header: true, // Toggles display of header with component name and description
   inline: true, // Displays info inline vs click button to view
-  source: true, // Displays the source of story Component,
+  source: false, // Displays the source of story Component,
   propTablesExclude: []
 });
 

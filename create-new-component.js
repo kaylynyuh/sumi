@@ -24,22 +24,12 @@ function replaceBoilerplate(path) {
 console.log(infoColor, 'Following files are being created:');
 
 // Main component file
-const mainComponentFilePath = `./src/components/${componentName}/${componentName}.js`;
+const mainComponentFilePath = `./src/components/${componentName}.js`;
 
 fs.copy('./boilerplate/Boilerplate.js', mainComponentFilePath)
   .then(() => {
     replaceBoilerplate(mainComponentFilePath);
     console.log(pathColor, mainComponentFilePath);
-  })
-  .catch(err => console.error(err));
-
-// Export file
-const exportComponentFilePath = `./src/components/${componentName}/index.js`;
-
-fs.copy('./boilerplate/index.js', exportComponentFilePath)
-  .then(() => {
-    replaceBoilerplate(exportComponentFilePath);
-    console.log(pathColor, exportComponentFilePath);
   })
   .catch(err => console.error(err));
 

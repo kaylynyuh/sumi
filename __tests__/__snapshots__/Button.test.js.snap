@@ -2,12 +2,15 @@
 
 exports[`renders Button 1`] = `
 .emotion-0 {
-  color: red;
+  background: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
 }
 
 <div
   className="emotion-0"
 >
-  Hello Button
+  Test
 </div>
 `;

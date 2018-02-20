@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import Boilerplate from '../src/components/Boilerplate';
+import BoilerplateClass from '../src/components/Boilerplate';
 
 storiesOf('Boilerplate', module)
   .add(
@@ -10,8 +10,6 @@ storiesOf('Boilerplate', module)
     withInfo({
       text: 'Boilerplate description',
     })(() => (
-      <div>
-        <Boilerplate>Test</Boilerplate>
-      </div>
+      <div className={BoilerplateClass}>Test</div>
     )),
   );
