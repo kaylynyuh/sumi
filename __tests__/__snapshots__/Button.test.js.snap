@@ -2,10 +2,30 @@
 
 exports[`renders Button 1`] = `
 .emotion-0 {
+  display: inline-block;
   background: none;
+  position: relative;
+  margin: 0;
+  padding: 0 1.5625rem;
+  height: 2.5rem;
+  line-height: 1;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.15);
+  border: 0.0625rem solid #666666;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 0.125rem;
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
+}
+
+.emotion-0:hover {
+  background: #f2f2f2;
+}
+
+.emotion-0:active {
+  box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
 }
 
 <div

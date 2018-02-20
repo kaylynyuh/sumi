@@ -4,7 +4,7 @@
   "description": "React Storybook inspired by Japanese sumi art style",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint stories/**/*.js src/**/*.js; jest;",
+    "test": "./node_modules/.bin/eslint stories/**/*.js src/**/*.js; jest",
     "start": "start-storybook -p 6006",
     "build": "build-storybook",
     "create": "node create-new-component.js"
