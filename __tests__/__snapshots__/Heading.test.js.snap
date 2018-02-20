@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Heading 1`] = `
+.emotion-0 {
+  margin: 0 0 1rem 0;
+  display: inline-block;
+  border-bottom: 0.0625rem solid #999999;
+  font-family: Bellefair,serif;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.125rem;
+  -moz-letter-spacing: 0.125rem;
+  -ms-letter-spacing: 0.125rem;
+  letter-spacing: 0.125rem;
+}
+
+.emotion-1 {
+  margin: 0 0 1rem 0;
+  font-family: Bellefair,serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.125rem;
+  -moz-letter-spacing: 0.125rem;
+  -ms-letter-spacing: 0.125rem;
+  letter-spacing: 0.125rem;
+  font-style: italic;
+}
+
+.emotion-2 {
+  margin: 0 0 1rem 0;
+  font-family: Roboto,sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  -webkit-letter-spacing: 0.0625rem;
+  -moz-letter-spacing: 0.0625rem;
+  -ms-letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625rem;
+}
+
+.emotion-3 {
+  margin: 0 0 1rem 0;
+  font-family: Roboto,sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+<div>
+  <h1
+    className="emotion-0"
+  >
+    Heading One
+  </h1>
+  <h2
+    className="emotion-1"
+  >
+    Heading Two
+  </h2>
+  <h3
+    className="emotion-2"
+  >
+    Heading Three
+  </h3>
+  <h4
+    className="emotion-3"
+  >
+    Heading Four
+  </h4>
+  <h5
+    className="emotion-3"
+  >
+    Heading Five
+  </h5>
+</div>
+`;
