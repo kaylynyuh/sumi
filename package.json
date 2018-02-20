@@ -1,7 +1,7 @@
 {
   "name": "sumi",
   "version": "0.1.0",
-  "description": "React Storybook inspired by Japanese sumi art style",
+  "description": "A framework agnostic Storybook components inspired by Japanese sumi art style.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint stories/**/*.js src/**/*.js; jest",
