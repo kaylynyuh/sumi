@@ -9,7 +9,11 @@ expect.addSnapshotSerializer(createSerializer(emotion));
 
 test('renders Image', () => {
   const reactComponent = renderer
-    .create(<div className={ImageClass}>Test</div>)
+    .create(<img
+      className={ImageClass}
+      src="https://source.unsplash.com/ngcX09jzLE0/800x533"
+      alt="Jelly Fish"
+    />)
     .toJSON();
 
   expect(reactComponent).toMatchSnapshot();
