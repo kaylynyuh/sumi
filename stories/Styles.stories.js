@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import ButtonStory from './Button.story';
 import HeadingStory from './Heading.story';
+import ImageStory from './Image.story';
 
 storiesOf('Styles', module)
   .add(
@@ -23,6 +24,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { HeadingStory }
+      </div>
+    )),
+  )
+  .add(
+    'Image',
+    withInfo({
+      text: 'Load images in style with fade-in animation and with responsive layout.',
+    })(() => (
+      <div>
+        { ImageStory }
       </div>
     )),
   );
