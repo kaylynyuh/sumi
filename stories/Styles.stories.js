@@ -5,6 +5,7 @@ import { withInfo } from '@storybook/addon-info';
 import ButtonStory from './Button.story';
 import HeadingStory from './Heading.story';
 import ImageStory from './Image.story';
+import FormStory from './Form.story';
 
 storiesOf('Styles', module)
   .add(
@@ -34,6 +35,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { ImageStory }
+      </div>
+    )),
+  )
+  .add(
+    'Form',
+    withInfo({
+      text: 'Simply styled accessible form elements.',
+    })(() => (
+      <div>
+        { FormStory }
       </div>
     )),
   );

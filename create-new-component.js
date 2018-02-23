@@ -34,14 +34,14 @@ fs.copy('./boilerplate/Boilerplate.js', mainComponentFilePath)
   .catch(err => console.error(err));
 
 // Story file
-// const storyFilePath = `./stories/${componentName}.story.js`;
-//
-// fs.copy('./boilerplate/Boilerplate.story.js', storyFilePath)
-//   .then(() => {
-//     replaceBoilerplate(storyFilePath);
-//     console.log(pathColor, storyFilePath);
-//   })
-//   .catch(err => console.error(err));
+const storyFilePath = `./stories/${componentName}.story.js`;
+
+fs.copy('./boilerplate/Boilerplate.story.js', storyFilePath)
+  .then(() => {
+    replaceBoilerplate(storyFilePath);
+    console.log(pathColor, storyFilePath);
+  })
+  .catch(err => console.error(err));
 
 // Test (Jest) file
 const testFilePath = `./__tests__/${componentName}.test.js`;

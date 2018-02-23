@@ -3,6 +3,7 @@ const colors = {
   mineShaft: '#333333',
   doveGray: '#666666',
   dustyGray: '#999999',
+  silver: '#cccccc',
   mercury: '#e6e6e6',
   concrete: '#f2f2f2',
   white: '#ffffff',
