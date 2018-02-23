@@ -3,7 +3,7 @@
 exports[`renders Button 1`] = `
 .emotion-0 {
   display: inline-block;
-  background: none;
+  background: #ffffff;
   position: relative;
   margin: 0;
   padding: 0 1.5625rem;

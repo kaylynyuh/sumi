@@ -5,7 +5,7 @@ import typography, { pxToRem } from '../styles/typography';
 
 const ButtonClass = css`
   display: inline-block;
-  background: none;
+  background: ${colors.white};
   position: relative;
   margin: 0;
   padding: 0 ${pxToRem(25)};
