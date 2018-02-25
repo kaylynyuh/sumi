@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Table 1`] = `
+.emotion-18 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  border-collapse: collapse;
+}
+
+.emotion-0 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.0625rem;
+  -moz-letter-spacing: 0.0625rem;
+  -ms-letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625rem;
+  text-align: left;
+}
+
+.emotion-4 {
+  border-bottom: 0.0625rem solid #999999;
+  text-align: left;
+}
+
+.emotion-1 {
+  text-align: left;
+  padding: 1rem 2rem 1rem 0;
+}
+
+<table
+  className="emotion-18"
+>
+  <caption
+    className="emotion-0"
+  >
+    Coffee Brewing Devices
+  </caption>
+  <thead>
+    <tr
+      className="emotion-4"
+    >
+      <th
+        className="emotion-1"
+      >
+        Brand
+      </th>
+      <th
+        className="emotion-1"
+        scope="col"
+      >
+        Product
+      </th>
+      <th
+        className="emotion-1"
+        scope="col"
+      >
+        Price
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="emotion-4"
+    >
+      <td
+        className="emotion-1"
+      >
+        AeroPress
+      </td>
+      <td
+        className="emotion-1"
+      >
+        Aeropress Coffee and Espresso Maker
+      </td>
+      <td
+        className="emotion-1"
+      >
+        $30.00
+      </td>
+    </tr>
+    <tr
+      className="emotion-4"
+    >
+      <td
+        className="emotion-1"
+      >
+        Chemex
+      </td>
+      <td
+        className="emotion-1"
+      >
+        Chemex Classic Series
+      </td>
+      <td
+        className="emotion-1"
+      >
+        $50.00
+      </td>
+    </tr>
+    <tr
+      className="emotion-4"
+    >
+      <td
+        className="emotion-1"
+      >
+        Kitchen Supreme
+      </td>
+      <td
+        className="emotion-1"
+      >
+        French Press Coffee & Tea Maker Complete Bundle
+      </td>
+      <td
+        className="emotion-1"
+      >
+        $30.00
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td
+        className="emotion-1"
+        colSpan="3"
+      >
+        Try them all out and see what you like.
+      </td>
+    </tr>
+  </tfoot>
+</table>
+`;

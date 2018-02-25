@@ -8,6 +8,7 @@ import TypographyStory from './Typography.story';
 import ImageStory from './Image.story';
 import FormStory from './Form.story';
 import ListStory from './List.story';
+import TableStory from './Table.story';
 
 storiesOf('Styles', module)
   .add(
@@ -67,6 +68,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { ListStory }
+      </div>
+    )),
+  )
+  .add(
+    'Table',
+    withInfo({
+      text: 'Simple table styles.',
+    })(() => (
+      <div>
+        { TableStory }
       </div>
     )),
   );
