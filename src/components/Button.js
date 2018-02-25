@@ -30,6 +30,38 @@ const ButtonClass = css`
   }
 `;
 
+const buttonIconBase = css`
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: ${pxToRem(20)};
+    height: ${pxToRem(20)};
+    transform: translateY(-50%);
+  }
+`;
+
+const ButtonIconLeftClass = css`
+  ${ButtonClass};
+  ${buttonIconBase};
+  padding-left: 3.5rem;
+  
+  &::before {
+    left: 1.5rem;
+  }
+`;
+
+const ButtonIconRightClass = css`
+  ${ButtonClass};
+  ${buttonIconBase};
+  padding-right: 3.5rem;
+  
+  &::before {
+    right: 1.5rem;
+  }
+`;
+
 const ButtonAccentClass = css`
   ${ButtonClass};
   background: ${colors.gray1};
@@ -40,7 +72,38 @@ const ButtonAccentClass = css`
   }
 `;
 
+const ButtonAccentIconLeftClass = css`
+  ${ButtonAccentClass};
+  ${buttonIconBase};
+  padding-left: 3.5rem;
+  
+  &::before {
+    left: 1.5rem;
+  }
+`;
+
+const ButtonAccentIconRightClass = css`
+  ${ButtonAccentClass};
+  ${buttonIconBase};
+  padding-right: 3.5rem;
+  
+  &::before {
+    right: 1.5rem;
+  }
+`;
+
+const SetButtonIcon = svg => css`
+  ::before {
+    background-image: url('${svg}');
+  }
+`;
+
 export {
   ButtonClass,
   ButtonAccentClass,
+  ButtonIconLeftClass,
+  ButtonIconRightClass,
+  ButtonAccentIconLeftClass,
+  ButtonAccentIconRightClass,
+  SetButtonIcon,
 };
