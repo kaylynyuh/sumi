@@ -11,7 +11,7 @@ const DLClass = css`
 const DTClass = css`
   font-weight: ${typography.fontWeightSemiBold};
   margin: 0 0 0.5rem;
-  color: ${colors.primaryColor};
+  color: ${colors.gray1};
 
   @media (min-width: ${mediaQueries.medium}) {
     float: left;

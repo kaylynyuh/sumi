@@ -25,7 +25,7 @@ const LegendClass = Heading3Class;
 const LabelClass = css`
   display: block;
   margin-bottom: 0.5rem;
-  color: ${colors.primaryColor};
+  color: ${colors.gray1};
   font-size: ${pxToRem(14)};
 `;
 
