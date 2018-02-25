@@ -35,11 +35,15 @@ storiesOf('Getting Started', module)
 
         <h3 className={Heading3Class}>Philosophy</h3>
 
-        <p>The Sumie style is intended to provide a simple, user-friendly, and accessible UI component styles.</p>
+        <p>Sumi is intended to provide a simple, user-friendly, and accessible UI component styles that is portable via CSS-in-JS technique.</p>
 
-        <p className={ParagraphClass}>The theme is composed of white, shades of gray, and black. This is the perfect theme to let your content (text and image) shine.</p>
+        <p className={ParagraphClass}>The theme is composed of white, shades of gray, and black.</p>
 
-        <p className={ParagraphClass}>Or, Sumie can be used as a starting point for your theme customization, and even kept as is to focus on a quick prototype development.</p>
+        <ul>
+          <li><p className={ParagraphClass}>Keep the original theme and let your content (text and image) shine.</p></li>
+          <li><p className={ParagraphClass}>Use it as a starting point for your theme customization.</p></li>
+          <li><p className={ParagraphClass}>Defer the design decision and focus on rapid prototyping.</p></li>
+        </ul>
       </div>
     )),
   );

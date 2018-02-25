@@ -1,3 +1,7 @@
+// Resources
+// https://webaim.org/resources/contrastchecker/
+// http://chir.ag/projects/name-that-color/
+
 const descriptiveColors = {
   mineShaft: '#333333',
   doveGray: '#666666',

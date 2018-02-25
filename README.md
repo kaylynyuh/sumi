@@ -10,11 +10,13 @@ Import them as you like, customize the style, and use the exported classes on yo
 
 ## Philosophy
 
-The Sumi style is intended to provide a simple, user-friendly, and accessible UI component styles.
+Sumi is intended to provide a simple, user-friendly, and accessible UI component styles that is portable via CSS-in-JS technique.
 
 The theme is composed of white, shades of gray, and black. This is the perfect theme to let your content (text and image) shine.
 
-Or, Sumi can be used as a starting point for your theme customization, and even kept as is to focus on a quick prototype development.
+- Keep the original theme and let your content (text and image) shine.
+- Use it as a starting point for your theme customization.
+- Defer the design decision and focus on rapid prototyping.
 
 See [Demo](https://elishaterada.github.io/sumi/).
 

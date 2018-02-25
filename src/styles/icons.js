@@ -1,3 +1,7 @@
+// Resources
+// https://github.com/svg/svgo
+// https://css-tricks.com/probably-dont-base64-svg/
+
 import colors from './colors';
 
 const icons = {
