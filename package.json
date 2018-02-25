@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint stories/**/*.js src/**/*.js; jest",
-    "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "start": "start-storybook -p 6006 -s ./assets",
+    "build": "build-storybook -s ./assets",
     "create": "node create-new-component.js"
   },
   "repository": {
