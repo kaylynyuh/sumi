@@ -6,7 +6,7 @@ import { css } from 'emotion';
 import colors from '../styles/colors';
 import { pxToRem } from '../styles/typography';
 import { Heading3Class } from './Typography';
-import ButtonClass from './Button';
+import { ButtonClass } from './Button';
 
 // Fieldset
 

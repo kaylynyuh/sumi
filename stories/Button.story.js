@@ -1,6 +1,9 @@
 import React from 'react';
 
-import ButtonClass from '../src/components/Button';
+import {
+  ButtonClass,
+  ButtonAccentClass,
+} from '../src/components/Button';
 
 const previewStyle = {
   margin: '0 1rem 1rem 0',
@@ -13,14 +16,14 @@ const ButtonStory = (
       onMouseDown={e => e.preventDefault()}
       style={previewStyle}
     >
-      Action
+      Normal
     </button>
     <button
-      className={ButtonClass}
+      className={ButtonAccentClass}
       onMouseDown={e => e.preventDefault()}
       style={previewStyle}
     >
-      More
+      Accent
     </button>
   </div>
 );

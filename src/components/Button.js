@@ -30,4 +30,17 @@ const ButtonClass = css`
   }
 `;
 
-export default ButtonClass;
+const ButtonAccentClass = css`
+  ${ButtonClass};
+  background: ${colors.gray1};
+  color: ${colors.white};
+  
+  &:hover {
+    background: ${colors.gray2};
+  }
+`;
+
+export {
+  ButtonClass,
+  ButtonAccentClass,
+};
