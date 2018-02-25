@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders List 1`] = `
+.emotion-6 {
+  margin: 0 0 1rem;
+}
+
+.emotion-0 {
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #333333;
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    float: left;
+    width: 12rem;
+    clear: left;
+    overflow: hidden;
+  }
+}
+
+.emotion-1 {
+  margin: 0 0 1rem;
+  color: #666666;
+}
+
+@media (min-width:64em) {
+  .emotion-1 {
+    margin-left: 15rem;
+  }
+}
+
+<dl
+  className="emotion-6"
+>
+  <dt
+    className="emotion-0"
+  >
+    Espresso
+  </dt>
+  <dd
+    className="emotion-1"
+  >
+    1 oz. espresso
+  </dd>
+  <dt
+    className="emotion-0"
+  >
+    Espresso Macchiato
+  </dt>
+  <dd
+    className="emotion-1"
+  >
+    1 oz. espresso + 1 Tbs. foamed milk
+  </dd>
+  <dt
+    className="emotion-0"
+  >
+    Cappuccino
+  </dt>
+  <dd
+    className="emotion-1"
+  >
+    1/3 espresso, 1/3 steamed milk, 1/3 foam
+  </dd>
+</dl>
+`;

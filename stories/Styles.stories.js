@@ -7,6 +7,7 @@ import LinkStory from './Link.story';
 import TypographyStory from './Typography.story';
 import ImageStory from './Image.story';
 import FormStory from './Form.story';
+import ListStory from './List.story';
 
 storiesOf('Styles', module)
   .add(
@@ -56,6 +57,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { FormStory }
+      </div>
+    )),
+  )
+  .add(
+    'List',
+    withInfo({
+      text: 'Simple list styles.',
+    })(() => (
+      <div>
+        { ListStory }
       </div>
     )),
   );
