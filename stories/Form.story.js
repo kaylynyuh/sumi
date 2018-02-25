@@ -37,12 +37,12 @@ const FormStory = (
       <label htmlFor="TextInput" className={LabelClass}>Text Input Label</label>
       <input id="TextInput" type="text" className={TextInputClass} />
 
-      <label htmlFor="TextInput" className={LabelClass}>Valid Text Input Label</label>
-      <input id="TextInput" type="text" className={cx(TextInputClass, inputValidClass)} />
+      <label htmlFor="ValidTextInput" className={LabelClass}>Valid Text Input Label</label>
+      <input id="ValidTextInput" type="text" className={cx(TextInputClass, inputValidClass)} />
       <p className={inputValidHintClass}>Looks good!</p>
 
-      <label htmlFor="TextInput" className={LabelClass}>Invalid Text Input Label</label>
-      <input id="TextInput" type="text" className={cx(TextInputClass, inputInvalidClass)} />
+      <label htmlFor="InvalidTextInput" className={LabelClass}>Invalid Text Input Label</label>
+      <input id="InvalidTextInput" type="text" className={cx(TextInputClass, inputInvalidClass)} />
       <p className={inputInvalidHintClass}>Something is wrong!</p>
 
     </fieldset>
