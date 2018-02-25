@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
 import ButtonStory from './Button.story';
-import HeadingStory from './Heading.story';
+import TypographyStory from './Typography.story';
 import ImageStory from './Image.story';
 import FormStory from './Form.story';
 
@@ -19,12 +19,12 @@ storiesOf('Styles', module)
     )),
   )
   .add(
-    'Heading',
+    'Typography',
     withInfo({
-      text: 'The first heading style is intended for a page header and intentionally subtle. The second heading style is intended for section titles to catch users’s attention as they scroll. The rest is intended to be more recessed.',
+      text: '',
     })(() => (
       <div>
-        { HeadingStory }
+        { TypographyStory }
       </div>
     )),
   )

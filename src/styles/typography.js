@@ -1,5 +1,5 @@
 const typography = {
-  sansSerifFontFamily: 'Roboto, sans-serif',
+  sansSerifFontFamily: '"Roboto", sans-serif',
   serifFontFamily: 'Bellefair, serif',
   baseFontSize: '16', // in px
   fontWeightRegular: '400',

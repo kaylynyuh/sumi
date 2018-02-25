@@ -4,8 +4,6 @@ exports[`renders Heading 1`] = `
 .emotion-0 {
   margin: 0 0 1rem 0;
   display: inline-block;
-  border-bottom: 0.0625rem solid #999999;
-  font-family: Bellefair,serif;
   font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 400;
@@ -18,22 +16,20 @@ exports[`renders Heading 1`] = `
 
 .emotion-1 {
   margin: 0 0 1rem 0;
-  font-family: Bellefair,serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.2;
   font-weight: 400;
-  -webkit-letter-spacing: 0.125rem;
-  -moz-letter-spacing: 0.125rem;
-  -ms-letter-spacing: 0.125rem;
-  letter-spacing: 0.125rem;
-  font-style: italic;
+  -webkit-letter-spacing: 0.0625rem;
+  -moz-letter-spacing: 0.0625rem;
+  -ms-letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625rem;
 }
 
 .emotion-2 {
   margin: 0 0 1rem 0;
-  font-family: Roboto,sans-serif;
   font-size: 1.125rem;
   line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0.0625rem;
   -moz-letter-spacing: 0.0625rem;
   -ms-letter-spacing: 0.0625rem;
@@ -42,10 +38,24 @@ exports[`renders Heading 1`] = `
 
 .emotion-3 {
   margin: 0 0 1rem 0;
-  font-family: Roboto,sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.2;
-  font-weight: 400;
+  -webkit-letter-spacing: 0.0625rem;
+  -moz-letter-spacing: 0.0625rem;
+  -ms-letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625rem;
+}
+
+.emotion-4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.0625rem;
+  -moz-letter-spacing: 0.0625rem;
+  -ms-letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625rem;
 }
 
 <div>
@@ -70,7 +80,7 @@ exports[`renders Heading 1`] = `
     Heading Four
   </h4>
   <h5
-    className="emotion-3"
+    className="emotion-4"
   >
     Heading Five
   </h5>

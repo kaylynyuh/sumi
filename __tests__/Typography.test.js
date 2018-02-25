@@ -3,10 +3,13 @@ import renderer from 'react-test-renderer';
 import { createSerializer } from 'jest-emotion';
 import * as emotion from 'emotion';
 
-import HeadingClass, {
-  Heading1Class, Heading2Class, Heading3Class, Heading4Class,
-  Heading5Class
-} from '../src/components/Heading';
+import {
+  Heading1Class,
+  Heading2Class,
+  Heading3Class,
+  Heading4Class,
+  Heading5Class,
+} from '../src/components/Typography';
 
 expect.addSnapshotSerializer(createSerializer(emotion));
 
