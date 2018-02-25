@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
 import ButtonStory from './Button.story';
+import LinkStory from './Link.story';
 import TypographyStory from './Typography.story';
 import ImageStory from './Image.story';
 import FormStory from './Form.story';
@@ -15,6 +16,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { ButtonStory }
+      </div>
+    )),
+  )
+  .add(
+    'Link',
+    withInfo({
+      text: 'A basic link style.',
+    })(() => (
+      <div>
+        { LinkStory }
       </div>
     )),
   )

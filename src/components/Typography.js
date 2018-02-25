@@ -17,7 +17,7 @@ const Heading1Class = css`
 const Heading1FancyClass = css`
   ${Heading1Class};
   font-family: ${typography.serifFontFamily};
-  border-bottom: ${pxToRem(1)} solid ${colors.dustyGray};
+  border-bottom: ${pxToRem(1)} solid ${colors.gray3};
 `;
 
 const Heading2Class = css`

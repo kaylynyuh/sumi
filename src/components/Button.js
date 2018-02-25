@@ -12,7 +12,7 @@ const ButtonClass = css`
   height: ${pxToRem(40)};
   line-height: ${pxToRem(40)};
   box-shadow: 0 ${pxToRem(2)} ${pxToRem(5)} ${colors.dropShadowColor};
-  border: ${pxToRem(1)} solid ${colors.doveGray};
+  border: ${pxToRem(1)} solid ${colors.gray2};
   cursor: pointer;
   box-sizing: content-box;
   border-radius: ${pxToRem(2)};
@@ -22,7 +22,7 @@ const ButtonClass = css`
   color: ${colors.primaryColor};
   
   &:hover {
-    background: ${colors.concrete};
+    background: ${colors.gray6};
   }
   
   &:active {

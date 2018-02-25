@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Link 1`] = `
+.emotion-0 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  color: #999999;
+}
+
+<div
+  className="emotion-0"
+>
+  Test
+</div>
+`;
