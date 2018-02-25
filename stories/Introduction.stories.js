@@ -9,6 +9,8 @@ import {
   ParagraphClass,
 } from '../src/components/Typography';
 
+import LinkClass from '../src/components/Link';
+
 import icons, { Icon } from '../src/styles/icons';
 
 const logo = Icon(icons.sumi);
@@ -27,7 +29,7 @@ storiesOf('Getting Started', module)
         <img src={logo} alt="Sumi Logo" className={logoClass} />
 
         <h3 className={Heading3Class}>Overview</h3>
-        <p className={ParagraphClass}>Sumi is a framework agnostic Storybook components inspired by Japanese sumi-e art style.</p>
+        <p className={ParagraphClass}><a className={LinkClass} href="https://github.com/elishaterada/sumi">Sumi</a> is a framework agnostic Storybook components inspired by Japanese sumi-e art style.</p>
 
         <p className={ParagraphClass}>All components simply exports encapsulated CSS classes, allowing the use in any JS frameworks.</p>
 
