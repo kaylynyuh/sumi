@@ -211,6 +211,7 @@ exports[`renders select 1`] = `
 }
 
 .emotion-1 {
+  margin: 0 0 1.5rem;
   position: relative;
   box-sizing: border-box;
   background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M32%209c0%20.5-.2%201-.6%201.4l-14%2014c-.4.4-.9.6-1.4.6s-1-.2-1.4-.6l-14-14C.2%2010%200%209.5%200%209s.2-1%20.6-1.4S1.5%207%202%207h28c.5%200%201%20.2%201.4.6s.6.9.6%201.4z%22%2F%3E%3C%2Fsvg%3E') 95% / 6% no-repeat #ffffff;
@@ -275,6 +276,7 @@ exports[`renders text input 1`] = `
 }
 
 .emotion-1 {
+  margin: 0 0 1.5rem;
   box-sizing: border-box;
   background: #ffffff;
   min-width: 15rem;

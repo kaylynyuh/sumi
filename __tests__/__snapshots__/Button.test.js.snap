@@ -8,11 +8,11 @@ exports[`renders Button 1`] = `
   margin: 0;
   padding: 0 1.5625rem;
   height: 2.5rem;
-  line-height: 1;
+  line-height: 2.5rem;
   box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.15);
   border: 0.0625rem solid #666666;
   cursor: pointer;
-  box-sizing: border-box;
+  box-sizing: content-box;
   border-radius: 0.125rem;
   text-decoration: none;
   font-size: 1rem;
