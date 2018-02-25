@@ -33,6 +33,7 @@
     "@storybook/addons": "^3.3.13",
     "@storybook/react": "^3.3.13",
     "babel-core": "^6.26.0",
+    "babel-plugin-emotion": "^9.0.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "emotion": "^9.0.1",
