@@ -59,6 +59,7 @@ const FileInputClass = css`
 const FileInputLabelClass = css`
   ${ButtonClass};
   margin: 0 0 1.5rem;
+  text-align: center;
 `;
 
 // Range
