@@ -14,7 +14,7 @@ storiesOf('Styles', module)
   .add(
     'Button',
     withInfo({
-      text: 'A basic button style intended to be used with your custom layout style.',
+      text: 'A basic button style intended to be used with your custom layout style. It can also be used to style links.',
     })(() => (
       <div>
         { ButtonStory }
@@ -24,7 +24,7 @@ storiesOf('Styles', module)
   .add(
     'Link',
     withInfo({
-      text: 'A basic link style.',
+      text: 'A basic link style. To apply the look of buttons, simply import button classes and apply to links.',
     })(() => (
       <div>
         { LinkStory }

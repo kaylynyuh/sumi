@@ -6,11 +6,14 @@ import colors from '../src/styles/colors';
 
 import {
   ButtonClass,
-  ButtonAccentClass,
   ButtonIconLeftClass,
   ButtonIconRightClass,
+  ButtonAccentClass,
   ButtonAccentIconLeftClass,
   ButtonAccentIconRightClass,
+  ButtonMinimalClass,
+  ButtonMinimalIconLeftClass,
+  ButtonMinimalIconRightClass,
   SetButtonIcon,
 } from '../src/components/Button';
 
@@ -32,14 +35,14 @@ const ButtonStory = (
         Normal
       </button>
       <button
-        className={cx(ButtonIconLeftClass, SetButtonIcon(sumiGrayIcon))}
+        className={cx(ButtonIconLeftClass, SetButtonIcon(sumiGrayIcon, 'left'))}
         onMouseDown={e => e.preventDefault()}
         style={previewStyle}
       >
         Left Icon
       </button>
       <button
-        className={cx(ButtonIconRightClass, SetButtonIcon(sumiGrayIcon))}
+        className={cx(ButtonIconRightClass, SetButtonIcon(sumiGrayIcon, 'right'))}
         onMouseDown={e => e.preventDefault()}
         style={previewStyle}
       >
@@ -55,14 +58,37 @@ const ButtonStory = (
         Accent
       </button>
       <button
-        className={cx(ButtonAccentIconLeftClass, SetButtonIcon(sumiWhiteIcon))}
+        className={cx(ButtonAccentIconLeftClass, SetButtonIcon(sumiWhiteIcon, 'left'))}
         onMouseDown={e => e.preventDefault()}
         style={previewStyle}
       >
         Left Icon
       </button>
       <button
-        className={cx(ButtonAccentIconRightClass, SetButtonIcon(sumiWhiteIcon))}
+        className={cx(ButtonAccentIconRightClass, SetButtonIcon(sumiWhiteIcon, 'right'))}
+        onMouseDown={e => e.preventDefault()}
+        style={previewStyle}
+      >
+        Right Icon
+      </button>
+    </div>
+    <div>
+      <button
+        className={ButtonMinimalClass}
+        onMouseDown={e => e.preventDefault()}
+        style={previewStyle}
+      >
+        Minimal
+      </button>
+      <button
+        className={cx(ButtonMinimalIconLeftClass, SetButtonIcon(sumiGrayIcon, 'left'))}
+        onMouseDown={e => e.preventDefault()}
+        style={previewStyle}
+      >
+        Left Icon
+      </button>
+      <button
+        className={cx(ButtonMinimalIconRightClass, SetButtonIcon(sumiGrayIcon, 'right'))}
         onMouseDown={e => e.preventDefault()}
         style={previewStyle}
       >
