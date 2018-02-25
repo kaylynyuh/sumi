@@ -85,10 +85,19 @@ const Heading5FancyClass = css`
 `;
 
 const ParagraphClass = css`
+  margin: 0 0 1rem;
   line-height: 1.6;
   font-size: 1rem;
   font-weight: ${typography.fontWeightRegular};
-  color: ${typography.primaryColor}
+  color: ${typography.primaryColor};
+  
+  + h1,
+  + h2, 
+  + h3, 
+  + h4, 
+  + h5 {
+    margin-top: 2rem;
+  }
 `;
 
 const ParagraphFancyClass = css`
