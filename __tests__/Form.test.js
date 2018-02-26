@@ -13,6 +13,7 @@ import {
   CheckboxLabelClass,
   RadioClass,
   RadioLabelClass,
+  ToggleClass,
 } from '../src/components/Form';
 
 expect.addSnapshotSerializer(createSerializer(emotion));
@@ -109,6 +110,24 @@ test('renders radio', () => {
           className={RadioClass}
         />
         <label htmlFor="radio-4" className={RadioLabelClass}>Radio 2</label>
+      </fieldset>,
+    )
+    .toJSON();
+
+  expect(reactComponent).toMatchSnapshot();
+});
+
+test('renders toggle checkbox', () => {
+  const reactComponent = renderer
+    .create(
+      <fieldset className={FieldsetClass}>
+        <input
+          id="checkbox-5"
+          type="checkbox"
+          value="checkbox-5"
+          className={ToggleClass}
+        />
+        <label htmlFor="checkbox-5">Checkbox</label>
       </fieldset>,
     )
     .toJSON();

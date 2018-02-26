@@ -54,8 +54,8 @@ const TextInputClass = css`
 // File
 
 const FileInputClass = css`
-  width: 0.1px;
-  height: 0.1px;
+  width: ${pxToRem(0.1)};
+  height: ${pxToRem(0.1)};
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -313,6 +313,69 @@ const CheckboxLabelClass = css`
   }
 `;
 
+const ToggleClass = css`
+  width: ${pxToRem(0.1)};
+  height: ${pxToRem(0.1)};
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  
+  &:focus + label {
+    background-color: ${colors.gray2};
+  }
+
+  + label {
+    display: block;
+    text-indent: ${defaultStyles.invisibleTextIndent};
+    color: transparent;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    width: ${pxToRem(60)};
+    height: ${pxToRem(20)};
+    background-color: ${colors.gray3};
+    border-radius: ${pxToRem(45)};
+    transition: background ${defaultStyles.transitionSpeed} ease;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    // Thumb
+    &::after {
+      top: -${pxToRem(5)};
+      left: 0;
+      width: ${pxToRem(32)};
+      height: ${pxToRem(32)};
+      background-color: ${colors.white};
+      border-radius: 100%;
+      box-shadow: ${pxToRem(1)} ${pxToRem(1)} ${pxToRem(10)} ${colors.dropShadowColor}, 0 0 ${pxToRem(1)} ${colors.dropShadowColor};
+      transition: all ${defaultStyles.transitionSpeed} ease;
+    }
+  }
+
+  &:checked + label {
+      background-color: ${colors.primaryColor};
+    
+    &::before {
+      background-color: ${colors.primaryColor};
+    }
+  }
+  
+  &:checked + label::after{
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  &:disabled + label {
+    opacity: 0.5;
+    cursor: default;
+  }
+`;
+
 // Submit
 
 const SubmitClass = ButtonClass;
@@ -367,6 +430,7 @@ export {
   RadioLabelClass,
   CheckboxClass,
   CheckboxLabelClass,
+  ToggleClass,
   SubmitClass,
   ResetClass,
   verticalFormGroupClass,

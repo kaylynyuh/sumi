@@ -23,6 +23,7 @@ import {
   inputInvalidClass,
   inputValidHintClass,
   inputInvalidHintClass,
+  ToggleClass,
 } from '../src/components/Form';
 
 const previewStyle = {
@@ -32,7 +33,7 @@ const previewStyle = {
 const FormStory = (
   <div>
     <fieldset className={FieldsetClass}>
-      <legend className={LegendClass}>Legend for text inputs</legend>
+      <legend className={LegendClass}>Text inputs</legend>
 
       <label htmlFor="TextInput" className={LabelClass}>Text Input Label</label>
       <input id="TextInput" type="text" className={TextInputClass} />
@@ -47,7 +48,7 @@ const FormStory = (
 
     </fieldset>
     <fieldset className={FieldsetClass}>
-      <legend className={LegendClass}>Legend for text based inputs</legend>
+      <legend className={LegendClass}>Text based inputs</legend>
 
       <label htmlFor="NumberInput" className={LabelClass}>Number Input Label</label>
       <input id="NumberInput" type="number" className={TextInputClass} />
@@ -141,8 +142,19 @@ const FormStory = (
       <label htmlFor="checkbox-4" className={CheckboxLabelClass}>Checkbox 2</label>
     </fieldset>
 
+    <fieldset className={cx(FieldsetClass, horizontalFormGroupClass)}>
+      <legend className={LegendClass}>Toggle checkbox</legend>
+      <input
+        id="checkbox-5"
+        type="checkbox"
+        value="checkbox-5"
+        className={ToggleClass}
+      />
+      <label htmlFor="checkbox-5">Checkbox</label>
+    </fieldset>
+
     <fieldset className={cx(FieldsetClass, verticalFormGroupClass)}>
-      <legend className={LegendClass}>Legend for related radio group</legend>
+      <legend className={LegendClass}>Vertical Radio group</legend>
       <input
         id="radio-1"
         type="radio"
@@ -162,7 +174,7 @@ const FormStory = (
     </fieldset>
 
     <fieldset className={cx(FieldsetClass, horizontalFormGroupClass)}>
-      <legend className={LegendClass}>Legend for related radio group</legend>
+      <legend className={LegendClass}>Horizontal Radio group</legend>
       <input
         id="radio-3"
         type="radio"
