@@ -22,6 +22,7 @@ const ButtonClass = css`
   font-size: ${pxToRem(16)};
   font-weight: ${typography.fontWeightRegular};
   color: ${colors.primaryColor};
+  text-align: center;
   transition: opacity ${defaultStyles.defaultTransitionSpeed} ease;
   
   &:hover {
