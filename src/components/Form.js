@@ -320,33 +320,39 @@ const ToggleClass = css`
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  
-  &:focus + label {
-    background-color: ${colors.gray2};
-  }
 
   + label {
     display: block;
     text-indent: ${defaultStyles.invisibleTextIndent};
-    color: transparent;
     position: relative;
     cursor: pointer;
     outline: none;
     width: ${pxToRem(60)};
-    height: ${pxToRem(20)};
-    background-color: ${colors.gray3};
-    border-radius: ${pxToRem(45)};
-    transition: background ${defaultStyles.transitionSpeed} ease;
+    height: ${pxToRem(32)};
+    background: transparent;
+    color: transparent;
 
+    &::before,
     &::after {
       content: "";
       display: block;
       position: absolute;
     }
+    
+    // Rail
+    &::before {
+      top: ${pxToRem(4)};
+      left: 0;
+      width: ${pxToRem(54)};
+      height: ${pxToRem(24)};
+      border-radius: ${pxToRem(45)};
+      background-color: ${colors.gray4};
+      transition: background ${defaultStyles.transitionSpeed} ease;
+    }
 
     // Thumb
     &::after {
-      top: -${pxToRem(5)};
+      top: 0;
       left: 0;
       width: ${pxToRem(32)};
       height: ${pxToRem(32)};
@@ -357,17 +363,18 @@ const ToggleClass = css`
     }
   }
 
+  &:focus + label::before {
+    background-color: ${colors.gray3};
+  }
+
   &:checked + label {
-      background-color: ${colors.primaryColor};
-    
     &::before {
       background-color: ${colors.primaryColor};
     }
-  }
-  
-  &:checked + label::after{
-    left: 100%;
-    transform: translateX(-100%);
+    &::after {
+      left: 100%;
+      transform: translateX(-100%);
+    }
   }
 
   &:disabled + label {
