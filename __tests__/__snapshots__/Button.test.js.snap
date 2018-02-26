@@ -19,6 +19,7 @@ exports[`renders Accent Button 1`] = `
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
+  text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   background: #333333;
@@ -59,6 +60,7 @@ exports[`renders Button 1`] = `
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
+  text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
@@ -97,6 +99,7 @@ exports[`renders Minimal Button 1`] = `
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
+  text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   border-radius: 0;
