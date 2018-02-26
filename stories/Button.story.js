@@ -14,11 +14,13 @@ import {
   ButtonMinimalClass,
   ButtonMinimalIconLeftClass,
   ButtonMinimalIconRightClass,
+  IconButtonClass,
   SetButtonIcon,
 } from '../src/components/Button';
 
 const sumiGrayIcon = Icon(icons.sumi);
 const sumiWhiteIcon = Icon(icons.sumi, colors.white);
+const githubIcon = Icon(icons.github);
 
 const previewStyle = {
   margin: '0 1rem 1rem 0',
@@ -94,6 +96,10 @@ const ButtonStory = (
       >
         Right Icon
       </button>
+    </div>
+    <div>
+      <button className={cx(IconButtonClass, SetButtonIcon(sumiGrayIcon))}>Sumi Button</button>
+      <button className={cx(IconButtonClass, SetButtonIcon(githubIcon))}>Github Button</button>
     </div>
   </div>
 );

@@ -5,14 +5,16 @@ import * as emotion from 'emotion';
 
 import {
   ButtonClass,
-  ButtonAccentClass, ButtonMinimalClass,
+  ButtonAccentClass,
+  ButtonMinimalClass,
+  IconButtonClass,
 } from '../src/components/Button';
 
 expect.addSnapshotSerializer(createSerializer(emotion));
 
 test('renders Button', () => {
   const reactComponent = renderer
-    .create(<div className={ButtonClass}>Test</div>)
+    .create(<button className={ButtonClass}>Test</button>)
     .toJSON();
 
   expect(reactComponent).toMatchSnapshot();
@@ -20,7 +22,7 @@ test('renders Button', () => {
 
 test('renders Accent Button', () => {
   const reactComponent = renderer
-    .create(<div className={ButtonAccentClass}>Test</div>)
+    .create(<button className={ButtonAccentClass}>Test</button>)
     .toJSON();
 
   expect(reactComponent).toMatchSnapshot();
@@ -28,7 +30,15 @@ test('renders Accent Button', () => {
 
 test('renders Minimal Button', () => {
   const reactComponent = renderer
-    .create(<div className={ButtonMinimalClass}>Test</div>)
+    .create(<button className={ButtonMinimalClass}>Test</button>)
+    .toJSON();
+
+  expect(reactComponent).toMatchSnapshot();
+});
+
+test('renders Icon Button', () => {
+  const reactComponent = renderer
+    .create(<button className={IconButtonClass}>Test</button>)
     .toJSON();
 
   expect(reactComponent).toMatchSnapshot();

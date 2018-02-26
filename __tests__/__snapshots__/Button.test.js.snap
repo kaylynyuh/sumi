@@ -34,11 +34,11 @@ exports[`renders Accent Button 1`] = `
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
 }
 
-<div
+<button
   className="emotion-0"
 >
   Test
-</div>
+</button>
 `;
 
 exports[`renders Button 1`] = `
@@ -73,11 +73,60 @@ exports[`renders Button 1`] = `
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
 }
 
-<div
+<button
   className="emotion-0"
 >
   Test
-</div>
+</button>
+`;
+
+exports[`renders Icon Button 1`] = `
+.emotion-0 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0.3125rem;
+  width: 2.625rem;
+  height: 2.625rem;
+  line-height: 2.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  text-indent: -999999rem;
+}
+
+.emotion-0:hover {
+  opacity: 0.75;
+}
+
+.emotion-0:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+<button
+  className="emotion-0"
+>
+  Test
+</button>
 `;
 
 exports[`renders Minimal Button 1`] = `
@@ -120,9 +169,9 @@ exports[`renders Minimal Button 1`] = `
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
 }
 
-<div
+<button
   className="emotion-0"
 >
   Test
-</div>
+</button>
 `;

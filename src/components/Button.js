@@ -127,6 +127,44 @@ const ButtonMinimalIconRightClass = css`
   }
 `;
 
+const IconButtonClass = css`
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: ${pxToRem(5)};
+  width: ${pxToRem(42)};
+  height: ${pxToRem(42)};
+  line-height: ${pxToRem(40)};
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: ${pxToRem(16)};
+  font-weight: ${typography.fontWeightRegular};
+  color: ${colors.primaryColor};
+  text-align: center;
+  transition: opacity ${defaultStyles.defaultTransitionSpeed} ease;
+  text-indent: ${defaultStyles.defaultInvisibleTextIndent};
+
+  &:hover {
+    opacity: ${defaultStyles.defaultHoverOpacity};
+  }
+  
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    content: "";
+    width: ${pxToRem(24)};
+    height: ${pxToRem(24)};
+  }
+`;
+
 const SetButtonIcon = (svg, direction = 'left') => {
   let buttonIconClass = null;
 
@@ -157,5 +195,6 @@ export {
   ButtonMinimalClass,
   ButtonMinimalIconLeftClass,
   ButtonMinimalIconRightClass,
+  IconButtonClass,
   SetButtonIcon,
 };

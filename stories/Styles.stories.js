@@ -14,7 +14,7 @@ storiesOf('Styles', module)
   .add(
     'Button',
     withInfo({
-      text: 'A basic button style intended to be used with your custom layout style. It can also be used to style links.',
+      text: 'Basic button styles intended to be used with your custom layout style. It can also be used to style links.',
     })(() => (
       <div>
         { ButtonStory }
