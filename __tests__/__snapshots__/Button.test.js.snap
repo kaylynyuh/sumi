@@ -34,6 +34,11 @@ exports[`renders Accent Button 1`] = `
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
 }
 
+.emotion-0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 <button
   className="emotion-0"
 >
@@ -71,6 +76,11 @@ exports[`renders Button 1`] = `
 
 .emotion-0:active {
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
+}
+
+.emotion-0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 <button
@@ -167,6 +177,11 @@ exports[`renders Minimal Button 1`] = `
 
 .emotion-0:active {
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
+}
+
+.emotion-0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 <button

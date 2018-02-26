@@ -32,6 +32,11 @@ const ButtonClass = css`
   &:active {
     box-shadow: 0 0 ${pxToRem(5)} ${colors.dropShadowColor};
   }
+  
+  &:disabled {
+    opacity: ${defaultStyles.disabledOpacity};
+    cursor: not-allowed;
+  }
 `;
 
 const buttonIconBase = css`
