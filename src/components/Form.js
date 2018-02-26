@@ -7,7 +7,10 @@ import colors from '../styles/colors';
 import defaultStyles from '../styles/defaults';
 import { pxToRem } from '../styles/typography';
 import { Heading3Class } from './Typography';
-import { ButtonClass } from './Button';
+import {
+  ButtonAccentClass,
+  ButtonClass,
+} from './Button';
 
 // Fieldset
 
@@ -66,6 +69,8 @@ const FileInputLabelClass = css`
   ${ButtonClass};
   margin: 0 0 1.5rem;
   text-align: center;
+  border-color: ${colors.gray2};
+  color: ${colors.gray1};
 `;
 
 // Range
@@ -385,7 +390,7 @@ const ToggleClass = css`
 
 // Submit
 
-const SubmitClass = ButtonClass;
+const SubmitClass = ButtonAccentClass;
 
 // Reset
 
