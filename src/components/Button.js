@@ -23,10 +23,10 @@ const ButtonClass = css`
   font-weight: ${typography.fontWeightRegular};
   color: ${colors.primaryColor};
   text-align: center;
-  transition: opacity ${defaultStyles.defaultTransitionSpeed} ease;
+  transition: opacity ${defaultStyles.transitionSpeed} ease;
   
   &:hover {
-    opacity: ${defaultStyles.defaultHoverOpacity};
+    opacity: ${defaultStyles.hoverOpacity};
   }
   
   &:active {
@@ -146,11 +146,11 @@ const IconButtonClass = css`
   font-weight: ${typography.fontWeightRegular};
   color: ${colors.primaryColor};
   text-align: center;
-  transition: opacity ${defaultStyles.defaultTransitionSpeed} ease;
-  text-indent: ${defaultStyles.defaultInvisibleTextIndent};
+  transition: opacity ${defaultStyles.transitionSpeed} ease;
+  text-indent: ${defaultStyles.invisibleTextIndent};
 
   &:hover {
-    opacity: ${defaultStyles.defaultHoverOpacity};
+    opacity: ${defaultStyles.hoverOpacity};
   }
   
   &:before {

@@ -149,7 +149,7 @@ const RangeInputClass = css`
   }
 
   &:disabled {
-     opacity: ${defaultStyles.defaultDisabledOpacity}
+     opacity: ${defaultStyles.disabledOpacity}
   }
 `;
 
@@ -238,7 +238,7 @@ const radioCheckboxBase = css`
   }
 
   &:disabled + label {
-    opacity: ${defaultStyles.defaultDisabledOpacity};
+    opacity: ${defaultStyles.disabledOpacity};
     cursor: not-allowed;
   }
 `;
