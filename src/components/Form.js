@@ -4,6 +4,7 @@
 import { css } from 'emotion';
 
 import colors from '../styles/colors';
+import defaultStyles from '../styles/defaults';
 import { pxToRem } from '../styles/typography';
 import { Heading3Class } from './Typography';
 import { ButtonClass } from './Button';
@@ -43,6 +44,11 @@ const TextInputClass = css`
   border: ${pxToRem(1)} solid ${colors.gray2};
   border-radius: ${pxToRem(3)};
   font-size: 1rem;
+  
+  &:disabled {
+    background: ${colors.gray6};
+    cursor: not-allowed;
+  }
 `;
 
 // File
@@ -77,7 +83,7 @@ const RangeInputClass = css`
     width: 100%;
     height: ${pxToRem(5)};
     cursor: pointer;
-    background: ${colors.gray4};
+    background: ${colors.gray3};
     border-radius: 0;
   }
   &::-webkit-slider-thumb {
@@ -98,7 +104,7 @@ const RangeInputClass = css`
     width: 100%;
     height: ${pxToRem(5)};
     cursor: pointer;
-    background: ${colors.gray4};
+    background: ${colors.gray3};
     border-radius: 0;
   }
   &::-moz-range-thumb {
@@ -119,11 +125,11 @@ const RangeInputClass = css`
     color: transparent;
   }
   &::-ms-fill-lower {
-    background: ${colors.gray4};
+    background: ${colors.gray3};
     border-radius: 0;
   }
   &::-ms-fill-upper {
-    background: ${colors.gray4};
+    background: ${colors.gray3};
     border-radius: 0;
   }
   &::-ms-thumb {
@@ -136,10 +142,14 @@ const RangeInputClass = css`
     height: ${pxToRem(5)};
   }
   &:focus::-ms-fill-lower {
-    background: ${colors.gray4};
+    background: ${colors.gray3};
   }
   &:focus::-ms-fill-upper {
     background: ${colors.gray3};
+  }
+
+  &:disabled {
+     opacity: ${defaultStyles.defaultDisabledOpacity}
   }
 `;
 
@@ -155,6 +165,11 @@ const TextAreaClass = css`
   border: ${pxToRem(1)} solid ${colors.gray2};
   border-radius: ${pxToRem(3)};
   font-size: 1rem;
+  
+  &:disabled {
+    background: ${colors.gray6};
+    cursor: not-allowed;
+  }
 `;
 
 // Select
@@ -173,6 +188,12 @@ const SelectClass = css`
   border: ${pxToRem(1)} solid ${colors.gray2};
   border-radius: ${pxToRem(3)};
   font-size: 1rem;
+  cursor: pointer;
+    
+  &:disabled {
+    background: ${colors.gray6};
+    cursor: not-allowed;
+  }
 `;
 
 // Radio + Checkbox
@@ -214,6 +235,11 @@ const radioCheckboxBase = css`
     text-align: center;
     opacity: 0;
     content: '';
+  }
+
+  &:disabled + label {
+    opacity: ${defaultStyles.defaultDisabledOpacity};
+    cursor: not-allowed;
   }
 `;
 
