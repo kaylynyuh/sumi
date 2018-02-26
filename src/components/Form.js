@@ -5,7 +5,7 @@ import { css } from 'emotion';
 
 import colors from '../styles/colors';
 import defaultStyles from '../styles/defaults';
-import { pxToRem } from '../styles/typography';
+import typography, { pxToRem } from '../styles/typography';
 import { Heading3Class } from './Typography';
 import {
   ButtonAccentClass,
@@ -22,7 +22,10 @@ const FieldsetClass = css`
 
 // Legend
 
-const LegendClass = Heading3Class;
+const LegendClass = css`
+  ${Heading3Class};
+  margin: 0 0 1.5rem;
+`;
 
 // Label
 
@@ -30,6 +33,7 @@ const LabelClass = css`
   display: block;
   margin-bottom: 0.5rem;
   color: ${colors.gray1};
+  font-family: ${typography.baseFontFamily};
   font-size: ${pxToRem(14)};
 `;
 
@@ -45,7 +49,8 @@ const TextInputClass = css`
   max-width: 100%;
   padding: 0.625rem;
   border: ${pxToRem(1)} solid ${colors.gray2};
-  border-radius: ${pxToRem(3)};
+  border-radius: ${pxToRem(2)};
+  font-family: ${typography.baseFontFamily};
   font-size: 1rem;
   
   &:disabled {
@@ -63,6 +68,10 @@ const FileInputClass = css`
   overflow: hidden;
   position: absolute;
   z-index: -1;
+  
+  &:focus + label {
+    opacity: ${defaultStyles.hoverOpacity};
+  }
 `;
 
 const FileInputLabelClass = css`
@@ -102,7 +111,7 @@ const RangeInputClass = css`
     margin-top: -${pxToRem(13.5)};
   }
   &:focus::-webkit-slider-runnable-track {
-    background: ${colors.gray3};
+    background: ${colors.gray2};
   }
 
   &::-moz-range-track {
@@ -169,6 +178,7 @@ const TextAreaClass = css`
   padding: 0.625rem;
   border: ${pxToRem(1)} solid ${colors.gray2};
   border-radius: ${pxToRem(3)};
+  font-family: ${typography.baseFontFamily};
   font-size: 1rem;
   
   &:disabled {
@@ -192,6 +202,7 @@ const SelectClass = css`
   padding: 0.625rem;
   border: ${pxToRem(1)} solid ${colors.gray2};
   border-radius: ${pxToRem(3)};
+  font-family: ${typography.baseFontFamily};
   font-size: 1rem;
   cursor: pointer;
     

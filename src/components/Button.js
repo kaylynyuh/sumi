@@ -5,6 +5,7 @@ import typography, { pxToRem } from '../styles/typography';
 import defaultStyles from '../styles/defaults';
 
 const ButtonClass = css`
+  font-family: ${typography.baseFontFamily};
   display: inline-block;
   background: ${colors.white};
   position: relative;
@@ -12,7 +13,7 @@ const ButtonClass = css`
   padding: 0 ${pxToRem(25)};
   min-width: ${pxToRem(200)};
   height: ${pxToRem(42)};
-  line-height: ${pxToRem(40)};
+  line-height: ${pxToRem(42)};
   box-shadow: 0 ${pxToRem(2)} ${pxToRem(5)} ${colors.dropShadowColor};
   border: ${pxToRem(1)} solid ${colors.primaryColor};
   cursor: pointer;
@@ -97,19 +98,23 @@ const ButtonAccentIconRightClass = css`
 const ButtonMinimalClass = css`
   ${ButtonClass};
   border-radius: 0;
-  border-top-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
   background: transparent;
   box-shadow: none;
   text-align: left;
   padding: 0;
+  
+  &:active {
+    box-shadow: none;
+  }
 `;
 
 const ButtonMinimalIconLeftClass = css`
   ${ButtonMinimalClass};
-  padding-left: 1.5rem;
-  
+  padding-left: 1.75rem;
+
   &::before {
     ${buttonIconBase};
     position: absolute;
@@ -121,7 +126,7 @@ const ButtonMinimalIconLeftClass = css`
 
 const ButtonMinimalIconRightClass = css`
   ${ButtonMinimalClass};
-  padding-right: 1.5rem;
+  padding-right: 1.75rem;
   
   &::after {
     ${buttonIconBase};

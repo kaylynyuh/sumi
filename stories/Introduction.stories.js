@@ -16,7 +16,7 @@ import {
 import LinkClass from '../src/components/Link';
 import ImageClass from '../src/components/Image';
 import {
-  ButtonIconLeftClass,
+  ButtonMinimalIconLeftClass,
   SetButtonIcon,
 } from '../src/components/Button';
 
@@ -45,7 +45,9 @@ storiesOf('Getting Started', module)
 
         <p className={ParagraphClass}>Import them as you like, customize the style, and use the exported classes on your JS components.</p>
 
-        <p className={ParagraphClass}><a href="https://github.com/elishaterada/sumi" className={cx(ButtonIconLeftClass, SetButtonIcon(githubLogo, 'left'))}>GitHub</a></p>
+        <p className={ParagraphClass}>
+          <a href="https://github.com/elishaterada/sumi" className={cx(ButtonMinimalIconLeftClass, SetButtonIcon(githubLogo, 'left'))}>Visit GitHub</a>
+        </p>
 
         <h3 className={Heading3Class}>Philosophy</h3>
 

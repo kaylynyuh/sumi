@@ -217,6 +217,7 @@ exports[`renders select 1`] = `
   display: block;
   margin-bottom: 0.5rem;
   color: #333333;
+  font-family: "Roboto",sans-serif;
   font-size: 0.875rem;
 }
 
@@ -233,6 +234,7 @@ exports[`renders select 1`] = `
   padding: 0.625rem;
   border: 0.0625rem solid #666666;
   border-radius: 0.1875rem;
+  font-family: "Roboto",sans-serif;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -288,6 +290,7 @@ exports[`renders text input 1`] = `
   display: block;
   margin-bottom: 0.5rem;
   color: #333333;
+  font-family: "Roboto",sans-serif;
   font-size: 0.875rem;
 }
 
@@ -299,7 +302,8 @@ exports[`renders text input 1`] = `
   max-width: 100%;
   padding: 0.625rem;
   border: 0.0625rem solid #666666;
-  border-radius: 0.1875rem;
+  border-radius: 0.125rem;
+  font-family: "Roboto",sans-serif;
   font-size: 1rem;
 }
 
@@ -336,6 +340,7 @@ exports[`renders textarea 1`] = `
   display: block;
   margin-bottom: 0.5rem;
   color: #333333;
+  font-family: "Roboto",sans-serif;
   font-size: 0.875rem;
 }
 
@@ -348,6 +353,7 @@ exports[`renders textarea 1`] = `
   padding: 0.625rem;
   border: 0.0625rem solid #666666;
   border-radius: 0.1875rem;
+  font-family: "Roboto",sans-serif;
   font-size: 1rem;
 }
 

@@ -73,9 +73,8 @@ const FormStory = (
       <legend className={LegendClass}>Advanced Input Types</legend>
 
       <label htmlFor="FileInput" className={LabelClass}>File Input Label</label>
-      <label htmlFor="FileInput" className={FileInputLabelClass}>Choose a file...</label>
       <input id="FileInput" type="file" className={FileInputClass} />
-
+      <label htmlFor="FileInput" className={FileInputLabelClass}>Choose a file...</label>
 
       <label htmlFor="RangeInput" className={LabelClass}>Range Input</label>
       <input
