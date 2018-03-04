@@ -25,7 +25,9 @@ const ButtonClass = css`
   color: ${colors.primaryColor};
   text-align: center;
   transition: opacity ${defaultStyles.transitionSpeed} ease;
-  
+  user-select: none;
+  outline: none;
+
   &:hover {
     opacity: ${defaultStyles.hoverOpacity};
   }
@@ -34,6 +36,10 @@ const ButtonClass = css`
     box-shadow: 0 0 ${pxToRem(5)} ${colors.dropShadowColor};
   }
   
+  &:focus {
+    border-color: ${colors.information};
+  }
+
   &:disabled {
     opacity: ${defaultStyles.disabledOpacity};
     cursor: not-allowed;

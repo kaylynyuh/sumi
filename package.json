@@ -36,6 +36,7 @@
     "babel-plugin-emotion": "^9.0.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "color": "^3.0.0",
     "emotion": "^9.0.1",
     "eslint": "^4.18.0",
     "eslint-config-airbnb": "^16.1.0",

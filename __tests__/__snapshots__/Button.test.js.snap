@@ -23,6 +23,11 @@ exports[`renders Accent Button 1`] = `
   text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
   background: #333333;
   color: #ffffff;
 }
@@ -33,6 +38,10 @@ exports[`renders Accent Button 1`] = `
 
 .emotion-0:active {
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
+}
+
+.emotion-0:focus {
+  border-color: #2196F3;
 }
 
 .emotion-0:disabled {
@@ -70,6 +79,11 @@ exports[`renders Button 1`] = `
   text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
 }
 
 .emotion-0:hover {
@@ -78,6 +92,10 @@ exports[`renders Button 1`] = `
 
 .emotion-0:active {
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
+}
+
+.emotion-0:focus {
+  border-color: #2196F3;
 }
 
 .emotion-0:disabled {
@@ -164,6 +182,11 @@ exports[`renders Minimal Button 1`] = `
   text-align: center;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
   border-radius: 0;
   border-top-color: transparent;
   border-left-color: transparent;
@@ -180,6 +203,10 @@ exports[`renders Minimal Button 1`] = `
 
 .emotion-0:active {
   box-shadow: 0 0 0.3125rem rgba(0,0,0,0.15);
+}
+
+.emotion-0:focus {
+  border-color: #2196F3;
 }
 
 .emotion-0:disabled {

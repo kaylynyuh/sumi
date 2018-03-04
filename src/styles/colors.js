@@ -1,6 +1,7 @@
 // Resources
 // https://webaim.org/resources/contrastchecker/
 // http://chir.ag/projects/name-that-color/
+import Color from 'color';
 
 const descriptiveColors = {
   mineShaft: '#333333',
@@ -33,7 +34,7 @@ colors.success = descriptiveColors.fruitSalad;
 colors.error = descriptiveColors.pomegranate;
 colors.warning = descriptiveColors.orangePeel;
 colors.information = descriptiveColors.dodgerBlue;
-colors.dropShadowColor = 'rgba(0, 0, 0, 0.15)';
+colors.dropShadowColor = Color(colors.black).alpha(0.15).rgb().toString();
 colors.defaultBorderColor = colors.gray1;
 
 export default colors;
