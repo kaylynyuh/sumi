@@ -20,3 +20,33 @@ The theme is composed of white, shades of gray, and black. This is the perfect t
 
 See [Demo](https://elishaterada.github.io/sumi/).
 
+## Setup
+
+- `npm install`
+- `npm start`
+
+## Customize
+
+### Base Styles & Utilities
+
+Base style definitions and utilities are found in [/src/styles](/src/styles). This is where you want to control globally applied styles that gets imported in the main components.
+
+### Components
+
+Components can be found in [/src/components](/src/components). Many of them are dependent on base style and utilities.
+
+### Stories
+
+Stories document components you build, use them as needed for you and your team.
+
+## Develop
+
+This project includes a simple node script that generates number of files based on boilerplate to save you time.
+
+- `npm run create ComponentName`
+
+## Test
+
+Be sure to edit the generated test file to test your newly created component, and simply run test command.
+
+- `npm test`

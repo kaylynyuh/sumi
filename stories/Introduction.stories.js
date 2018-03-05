@@ -16,7 +16,7 @@ import {
 import LinkClass from '../src/components/Link';
 import ImageClass from '../src/components/Image';
 import {
-  ButtonMinimalIconLeftClass,
+  ButtonIconLeftClass,
   SetButtonIcon,
 } from '../src/components/Button';
 
@@ -46,20 +46,8 @@ storiesOf('Getting Started', module)
         <p className={ParagraphClass}>Import them as you like, customize the style, and use the exported classes on your JS components.</p>
 
         <p className={ParagraphClass}>
-          <a href="https://github.com/elishaterada/sumi" className={cx(ButtonMinimalIconLeftClass, SetButtonIcon(githubLogo, 'left'))}>Visit GitHub</a>
+          <a href="https://github.com/elishaterada/sumi" className={cx(ButtonIconLeftClass, SetButtonIcon(githubLogo, 'left'))}>Visit GitHub</a>
         </p>
-
-        <h3 className={Heading3Class}>Philosophy</h3>
-
-        <p>Sumi is intended to provide a simple, user-friendly, and accessible UI component styles that is portable via CSS-in-JS technique.</p>
-
-        <p className={ParagraphClass}>The theme is composed of white, shades of gray, and black.</p>
-
-        <ul>
-          <li><p className={ParagraphClass}>Keep the original theme and let your content (text and image) shine.</p></li>
-          <li><p className={ParagraphClass}>Use it as a starting point for your theme customization.</p></li>
-          <li><p className={ParagraphClass}>Defer the design decision and focus on rapid prototyping.</p></li>
-        </ul>
       </div>
     )),
   );
