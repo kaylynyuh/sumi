@@ -1,7 +1,17 @@
-import { css } from 'emotion';
+import { css, keyframes } from 'emotion';
 
 import colors from '../styles/colors';
 import typography, { pxToRem } from '../styles/typography';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const CardClass = css`
   margin: 0 0 1rem;
@@ -15,6 +25,9 @@ const CardClass = css`
 
 const CardImageClass = css`
   max-width: 100%;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: ${fadeIn};
 `;
 
 const CardContentClass = css`

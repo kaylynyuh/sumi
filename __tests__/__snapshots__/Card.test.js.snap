@@ -13,6 +13,12 @@ exports[`renders Card 1`] = `
 
 .emotion-0 {
   max-width: 100%;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: animation-5j8bii;
+  animation-name: animation-5j8bii;
 }
 
 .emotion-2 {

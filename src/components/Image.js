@@ -12,12 +12,26 @@ const fadeIn = keyframes`
   }
 `;
 
-const ImageClass = css`
-  max-width: 100%;
-  border-radius: ${pxToRem(3)};
+const imageBaseClass = css`
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: ${fadeIn};
 `;
 
-export default ImageClass;
+const ImageClass = css`
+  ${imageBaseClass};
+  max-width: 100%;
+  border-radius: ${pxToRem(3)};
+`;
+
+const ImageCircleClass = css`
+  ${imageBaseClass};
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+`;
+
+export {
+  ImageClass,
+  ImageCircleClass,
+};
