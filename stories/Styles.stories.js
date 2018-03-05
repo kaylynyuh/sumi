@@ -96,7 +96,7 @@ storiesOf('Styles', module)
   .add(
     'Card',
     withInfo({
-      text: 'Simple table styles.',
+      text: 'Simple card style.',
     })(() => (
       <div>
         { CardStory }
