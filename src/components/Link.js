@@ -6,7 +6,7 @@ import typography, { pxToRem } from '../styles/typography';
 const LinkClass = css`
   font-size: ${pxToRem(16)};
   font-weight: ${typography.fontWeightRegular};
-  color: ${colors.primaryColor};
+  color: ${colors.info};
   text-decoration: underline;
 
   :hover,

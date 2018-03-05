@@ -41,6 +41,7 @@ exports[`renders Heading 1`] = `
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
+  color: #666666;
   -webkit-letter-spacing: 0.0625rem;
   -moz-letter-spacing: 0.0625rem;
   -ms-letter-spacing: 0.0625rem;
@@ -52,6 +53,7 @@ exports[`renders Heading 1`] = `
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 600;
+  color: #666666;
   -webkit-letter-spacing: 0.0625rem;
   -moz-letter-spacing: 0.0625rem;
   -ms-letter-spacing: 0.0625rem;

@@ -58,7 +58,7 @@ const TextInputClass = css`
   outline: none;
   
   &:focus {
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
   
   &:disabled {
@@ -79,7 +79,7 @@ const FileInputClass = css`
 
   &:focus + label {
     opacity: ${defaultStyles.hoverOpacity};
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
 `;
 
@@ -117,7 +117,7 @@ const RangeInputClass = css`
     margin-top: -${pxToRem(13.5)};
   }
   &:focus::-webkit-slider-runnable-track {
-    background: ${colors.information};
+    background: ${colors.info};
   }
 
   &::-moz-range-track {
@@ -162,10 +162,10 @@ const RangeInputClass = css`
     height: ${pxToRem(5)};
   }
   &:focus::-ms-fill-lower {
-    background: ${colors.information};
+    background: ${colors.info};
   }
   &:focus::-ms-fill-upper {
-    background: ${colors.information};
+    background: ${colors.info};
   }
 
   &:disabled {
@@ -189,7 +189,7 @@ const TextAreaClass = css`
   outline: none;
   
   &:focus {
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
   
   &:disabled {
@@ -219,7 +219,7 @@ const SelectClass = css`
   outline: none;
 
   &:focus {
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
     
   &:disabled {
@@ -289,7 +289,7 @@ const radioCheckboxLabelBase = css`
 
 const radioUnselectedIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.9" fill="${colors.white}"/><path d="M10 19.9c5.5 0 10-4.4 9.9-9.9 0-5.4-4.4-9.9-9.9-9.9C4.6.1.1 4.5.1 10c0 5.4 4.4 9.9 9.9 9.9zm0-18.8c5 0 8.9 4 8.9 8.9s-4 8.9-8.9 8.9-8.9-4-8.9-8.9 4-8.9 8.9-8.9z" fill="${colors.gray1}"/></svg>`);
 
-const radioUnselectedHoverIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.9" fill="${colors.white}"/><path d="M10 19.9c5.5 0 10-4.4 9.9-9.9 0-5.4-4.4-9.9-9.9-9.9C4.6.1.1 4.5.1 10c0 5.4 4.4 9.9 9.9 9.9zm0-18.8c5 0 8.9 4 8.9 8.9s-4 8.9-8.9 8.9-8.9-4-8.9-8.9 4-8.9 8.9-8.9z" fill="${colors.information}"/></svg>`);
+const radioUnselectedHoverIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.9" fill="${colors.white}"/><path d="M10 19.9c5.5 0 10-4.4 9.9-9.9 0-5.4-4.4-9.9-9.9-9.9C4.6.1.1 4.5.1 10c0 5.4 4.4 9.9 9.9 9.9zm0-18.8c5 0 8.9 4 8.9 8.9s-4 8.9-8.9 8.9-8.9-4-8.9-8.9 4-8.9 8.9-8.9z" fill="${colors.info}"/></svg>`);
 
 const radioSelectedIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.5" fill="${colors.white}"/><path d="M10 19.9c5.5 0 10-4.4 9.9-9.9 0-5.4-4.4-9.9-9.9-9.9C4.6.1.1 4.5.1 10c0 5.4 4.4 9.9 9.9 9.9zm0-13.4c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5-3.5-1.6-3.5-3.5S8.1 6.5 10 6.5z" fill="${colors.success}"/></svg>`);
 
@@ -325,7 +325,7 @@ const RadioLabelClass = css`
 
 const checkboxUnselectedIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z" fill="${colors.white}"/><path d="M17 0H3C1.3 0 0 1.4 0 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3zm2 17c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="${colors.gray1}"/></svg>`);
 
-const checkboxUnselectedHoverIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 0H3C1.3 0 0 1.4 0 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3z" fill="${colors.information}"/><path d="M19 17c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="${colors.white}"/></svg>`);
+const checkboxUnselectedHoverIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 0H3C1.3 0 0 1.4 0 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3z" fill="${colors.info}"/><path d="M19 17c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="${colors.white}"/></svg>`);
 
 const checkboxSelectedIcon = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.3 5.2c-.3-.2-.6-.2-.9 0L9 12.3 5.7 9.7c-.3-.2-.6-.2-.9 0l-.6.5c-.3.3-.3.6 0 .8l4.4 3.8c.1.1.2.2.4.2s.4-.1.5-.2l6.4-8.3c.1-.1.1-.5 0-.8l-.6-.5z" fill="${colors.white}"/><path d="M17 0H3C1.3 0 0 1.4 0 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3zm-1.1 6.5l-6.4 8.3c-.1.1-.3.2-.5.2s-.3-.1-.4-.2L4.2 11c-.3-.2-.3-.5 0-.8l.6-.5c.3-.2.6-.2.9 0L9 12.3l5.4-7.1c.3-.2.6-.2.9 0l.6.5c.1.3.1.7 0 .8z" fill="${colors.success}"/></svg>`);
 
@@ -415,7 +415,7 @@ const ToggleClass = css`
 
   &:hover + label::before,
   &:focus + label::before {
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
 
   &:checked + label {

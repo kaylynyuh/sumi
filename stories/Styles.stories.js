@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
+import ColorStory from './Color.story';
 import ButtonStory from './Button.story';
 import LinkStory from './Link.story';
 import TypographyStory from './Typography.story';
@@ -11,6 +12,16 @@ import ListStory from './List.story';
 import TableStory from './Table.story';
 
 storiesOf('Styles', module)
+  .add(
+    'Color',
+    withInfo({
+      text: 'Colors defined for this application.',
+    })(() => (
+      <div>
+        { ColorStory }
+      </div>
+    )),
+  )
   .add(
     'Button',
     withInfo({

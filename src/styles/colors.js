@@ -18,6 +18,8 @@ const descriptiveColors = {
 
 const colors = {};
 
+colors.primaryColor = descriptiveColors.mineShaft;
+
 colors.black = '#000000';
 colors.white = '#ffffff';
 
@@ -28,12 +30,11 @@ colors.gray4 = descriptiveColors.silver;
 colors.gray5 = descriptiveColors.mercury;
 colors.gray6 = descriptiveColors.concrete;
 
-colors.primaryColor = colors.gray1;
-colors.secondaryColor = colors.gray2;
 colors.success = descriptiveColors.fruitSalad;
 colors.error = descriptiveColors.pomegranate;
 colors.warning = descriptiveColors.orangePeel;
-colors.information = descriptiveColors.dodgerBlue;
+colors.info = descriptiveColors.dodgerBlue;
+
 colors.dropShadowColor = Color(colors.black).alpha(0.15).rgb().toString();
 colors.defaultBorderColor = colors.gray1;
 

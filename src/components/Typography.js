@@ -57,7 +57,7 @@ const Heading4Class = css`
   font-size: ${pxToRem(16)};
   font-weight: ${typography.fontWeightSemiBold};
   line-height: 1.2;
-  color: ${typography.secondaryColor};
+  color: ${colors.gray2};
   letter-spacing: ${pxToRem(1)};
 `;
 
@@ -73,7 +73,7 @@ const Heading5Class = css`
   font-size: ${pxToRem(16)};
   line-height: 1.2;
   font-weight: ${typography.fontWeightSemiBold};
-  color: ${typography.secondaryColor};
+  color: ${colors.gray2};
   letter-spacing: ${pxToRem(1)};
 `;
 

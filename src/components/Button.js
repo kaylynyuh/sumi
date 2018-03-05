@@ -37,7 +37,7 @@ const ButtonClass = css`
   }
   
   &:focus {
-    border-color: ${colors.information};
+    border-color: ${colors.info};
   }
 
   &:disabled {

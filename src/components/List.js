@@ -23,7 +23,7 @@ const DTClass = css`
 
 const DDClass = css`
   margin: 0 0 1rem;
-  color: ${colors.secondaryColor};
+  color: ${colors.gray2};
 
   @media (min-width: ${mediaQueries.medium}) {
     margin-left: 15rem;
