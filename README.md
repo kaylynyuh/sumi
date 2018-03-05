@@ -29,24 +29,24 @@ See [Demo](https://elishaterada.github.io/sumi/).
 
 ### Base Styles & Utilities
 
-Base style definitions and utilities are found in [/src/styles](/src/styles). This is where you want to control globally applied styles that gets imported in the main components.
+Base style definitions and utilities are found in [/src/styles](src/styles). This is where you want to control globally applied styles that gets imported in the main components.
 
 ### Components
 
-Components can be found in [/src/components](/src/components). Many of them are dependent on base style and utilities.
+Components can be found in [/src/components](src/components). Many of them are dependent on base style and utilities.
 
 ### Stories
 
-Stories document components you build, use them as needed for you and your team.
+Stories document components you build found in [/stories](stories). Use them as you see fit for you and your team.
 
 ## Develop
 
-This project includes a simple node script that generates number of files based on boilerplate to save you time.
+This project includes a simple node script that generates number of files based on [boilerplate](boilerplate) to save you time.
 
 - `npm run create ComponentName`
 
 ## Test
 
-Be sure to edit the generated test file to test your newly created component, and simply run test command.
+Edit the generated test file that can be found in [__tests__](__tests__). This projects uses [Jest](https://facebook.github.io/jest/) for both snapshot testing and unit testing.
 
 - `npm test`
