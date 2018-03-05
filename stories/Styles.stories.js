@@ -10,6 +10,7 @@ import ImageStory from './Image.story';
 import FormStory from './Form.story';
 import ListStory from './List.story';
 import TableStory from './Table.story';
+import CardStory from './Card.story';
 
 storiesOf('Styles', module)
   .add(
@@ -89,6 +90,16 @@ storiesOf('Styles', module)
     })(() => (
       <div>
         { TableStory }
+      </div>
+    )),
+  )
+  .add(
+    'Card',
+    withInfo({
+      text: 'Simple table styles.',
+    })(() => (
+      <div>
+        { CardStory }
       </div>
     )),
   );

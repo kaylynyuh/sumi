@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Card 1`] = `
+.emotion-3 {
+  overflow: hidden;
+  border: 0.0625rem solid #e6e6e6;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.emotion-0 {
+  max-width: 100%;
+}
+
+.emotion-2 {
+  padding: 1rem;
+}
+
+.emotion-1 {
+  margin: 0 0 1rem;
+}
+
+.emotion-1:last-of-type {
+  margin: 0;
+}
+
+<div
+  className="emotion-3"
+>
+  <img
+    alt="Jelly Fish"
+    className="emotion-0"
+    src="https://source.unsplash.com/ngcX09jzLE0/800x533"
+  />
+  <div
+    className="emotion-2"
+  >
+    <p
+      className="emotion-1"
+    >
+      Movements living a fully ethical life silo emerging justice, benefit corporation do-gooder program areas changemaker inspire society black lives matter the resistance uplift.
+    </p>
+  </div>
+</div>
+`;
