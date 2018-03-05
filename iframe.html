@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <base target="_parent">
+    <script>
+        if (window.parent !== window) {
+            window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+        }
+    </script>
+    <title>Storybook</title>
+    <!-- Here we can add local storybook styles (layout and presentational) that we don't want to use in the app -->
+<link href="https://fonts.googleapis.com/css?family=Bellefair|Roboto" rel="stylesheet">
+<style>
+  body {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  #root {
+    padding: 1rem;
+  }
+  /* Story Title */
+  #root > div > div:first-child > div {
+    margin-bottom: 2rem;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  /* Story Source */
+  #root > div > div:last-child > div {
+    margin-top: 2rem !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+</style>
+
+</head>
+<body>
+<div id="root"></div>
+<div id="error-display"></div>
+<script type="text/javascript" src="static/preview.b077ff63c9e9a6ab19c7.bundle.js"></script></body>
+</html>
