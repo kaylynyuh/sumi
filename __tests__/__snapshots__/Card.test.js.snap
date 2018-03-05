@@ -2,6 +2,7 @@
 
 exports[`renders Card 1`] = `
 .emotion-3 {
+  margin: 0 0 1rem;
   overflow: hidden;
   border: 0.0625rem solid #e6e6e6;
   border-radius: 0.1875rem;
@@ -22,7 +23,7 @@ exports[`renders Card 1`] = `
   margin: 0 0 1rem;
 }
 
-.emotion-1:last-of-type {
+.emotion-1:last-child {
   margin: 0;
 }
 

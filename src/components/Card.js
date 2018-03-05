@@ -4,6 +4,7 @@ import colors from '../styles/colors';
 import typography, { pxToRem } from '../styles/typography';
 
 const CardClass = css`
+  margin: 0 0 1rem;
   overflow: hidden;
   border: ${pxToRem(1)} solid ${colors.gray5};
   border-radius: ${pxToRem(3)};
@@ -23,7 +24,7 @@ const CardContentClass = css`
 const CardContentItemClass = css`
   margin: 0 0 1rem;
   
-  &:last-of-type {
+  &:last-child {
     margin: 0;
   }
 `;

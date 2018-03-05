@@ -11,7 +11,8 @@ const ButtonClass = css`
   position: relative;
   margin: 0;
   padding: 0 ${pxToRem(25)};
-  min-width: ${pxToRem(200)};
+  width: ${pxToRem(200)};
+  max-width: 100%;
   height: ${pxToRem(42)};
   line-height: ${pxToRem(42)};
   box-shadow: 0 ${pxToRem(2)} ${pxToRem(5)} ${colors.dropShadowColor};
